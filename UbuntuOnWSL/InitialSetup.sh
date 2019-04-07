@@ -26,9 +26,6 @@ sudo apt -y install build-essential
 # nginxのインストール
 sudo apt -y install nginx
 
-# PostgreSQLのインストール
-sudo apt -y install postgresql
-
 ###################### 以下vimの設定 ######################
 # 引用元元 https://qiita.com/iwaseasahi/items/0b2da68269397906c14c
 
