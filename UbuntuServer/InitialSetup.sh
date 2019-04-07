@@ -7,7 +7,7 @@
 # 以下のようなエラーが出る場合
 # /bin/bash^M: bad interpreter: そのようなファイルやディレクトリはありません (No such file or directory)
 # 当ファイルと同じディレクトリで以下のコマンドを実行
-# $ sed -i 's/\r//'　InitialSetup.sh
+# $ sed -i 's/\r//'  InitialSetup.sh
 # 参考 http://totech.hateblo.jp/entry/2014/03/19/174129
 
 sudo apt update
@@ -25,6 +25,11 @@ sudo apt -y install nginx
 
 # PostgreSQLのインストール
 sudo apt -y install postgresql
+
+# Let’s Encrypt の下準備
+# 設定参考 https://officeyuai.com/ubuntu18-04/ubuntu-18-04%E3%81%A7lets-encrypt%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6apache%E3%82%92%E4%BF%9D%E8%AD%B7%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/
+yes | sudo add-apt-repository ppa:certbot/certbot
+sudo apt -y install python-certbot-apache
 
 ###################### 以下vimの設定 ######################
 # 引用元 https://qiita.com/iwaseasahi/items/0b2da68269397906c14c
