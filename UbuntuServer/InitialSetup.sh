@@ -31,21 +31,6 @@ sudo apt -y install postgresql
 
 echo "Setting up .vimrc..."
 
-# vim_file=~/.vimrc
-# echo "set number" >> $vim_file
-# echo "\"ファイルを上書きする前にバックアップを作ることを無効化" >> $vim_file
-# echo "set nowritebackup" >> $vim_file
-# echo "\"ファイルを上書きする前にバックアップを作ることを無効化" >> $vim_file
-# echo "set nobackup" >> $vim_file
-# echo "\"vim の矩形選択で文字が無くても右へ進める" >> $vim_file
-# echo "set virtualedit=block" >> $vim_file
-# echo "\"挿入モードでバックスペースで削除できるようにする" >> $vim_file
-# echo "set backspace=indent,eol,start" >> $vim_file
-# echo "\"全角文字専用の設定" >> $vim_file
-# echo "set ambiwidth=double" >> $vim_file
-# echo "\"wildmenuオプションを有効(vimバーからファイルを選択できる)" >> $vim_file
-# echo "set wildmenu" >> $vim_file
-
 cat << EOF > ~/.vimrc
 " 行番号を表示
 set number
