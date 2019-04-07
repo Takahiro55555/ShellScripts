@@ -168,7 +168,7 @@ echo "Setting up .vimrc"
 vimrc_path=~/.vimrc
 # .vimrcの存在をチェック
 if [ ! -e $vimrc_path ]; then
-  echo $vimrc_settings >> $vimrc_path
+  echo "$vimrc_settings" >> $vimrc_path
   if [ $? ]; then
       echo "R:Successful .vimrc set up!!!"
   else
@@ -188,7 +188,7 @@ else
       esac
     done
   if [ "$ans" = "y" ] || [ "$ans" = "Y" ]; then
-    echo $vimrc_settings >> $vimrc_path
+    echo "$vimrc_settings" >> $vimrc_path
     if [ $? ]; then
       echo "R:Successful '.vimrc' set up!!!"
     else
