@@ -13,6 +13,11 @@
 sudo apt update
 sudo apt -y upgrade
 
+# PostgreSQL のインストール
+sudo apt -y install postgresql
+sudo apt -y install python-psycopg2
+sudo apt -y install libpq-dev
+
 # pipのインストール
 # apt install python-pip python3-pip
 sudo apt -y install python3-pip
