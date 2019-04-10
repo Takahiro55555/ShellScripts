@@ -25,6 +25,11 @@ sudo apt -y install nginx
 
 # PostgreSQLのインストール
 sudo apt -y install postgresql
+sudo apt -y install python-psycopg2
+sudo apt -y install libpq-dev
+
+# treeのインストール
+sudo apt -y install tree
 
 # Let’s Encrypt の下準備
 # 設定参考 https://officeyuai.com/ubuntu18-04/ubuntu-18-04%E3%81%A7lets-encrypt%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6apache%E3%82%92%E4%BF%9D%E8%AD%B7%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/
