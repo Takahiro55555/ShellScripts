@@ -31,6 +31,9 @@ sudo apt -y install build-essential
 # nginxのインストール
 sudo apt -y install nginx
 
+# treeのインストール
+sudo apt -y install tree
+
 ###################### 以下vimの設定 ######################
 # 引用元元 https://qiita.com/iwaseasahi/items/0b2da68269397906c14c
 
