@@ -36,6 +36,9 @@ sudo apt -y install tree
 yes | sudo add-apt-repository ppa:certbot/certbot
 sudo apt -y install python-certbot-apache
 
+# タイムゾーンを東京に設定
+sudo timedatectl set-timezone Asia/Tokyo
+
 ###################### 以下vimの設定 ######################
 # 引用元 https://qiita.com/iwaseasahi/items/0b2da68269397906c14c
 
