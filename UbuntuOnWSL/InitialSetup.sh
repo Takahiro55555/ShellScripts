@@ -34,6 +34,9 @@ sudo apt -y install nginx
 # treeのインストール
 sudo apt -y install tree
 
+# npmのインストール
+sudo apt -y install npm
+
 ###################### 以下vimの設定 ######################
 # 引用元元 https://qiita.com/iwaseasahi/items/0b2da68269397906c14c
 
