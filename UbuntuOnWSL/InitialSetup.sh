@@ -13,29 +13,23 @@
 sudo apt update
 sudo apt -y upgrade
 
-# PostgreSQL のインストール
-sudo apt -y install postgresql
-sudo apt -y install python-psycopg2
-sudo apt -y install libpq-dev
-
-# pipのインストール
-# apt install python-pip python3-pip
-sudo apt -y install python3-pip
-
-# venvのインストール
-sudo apt -y install python3-venv
+# poetryのインストール
+curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 
 # gcc makeツールのインストール
 sudo apt -y install build-essential
-
-# nginxのインストール
-sudo apt -y install nginx
 
 # treeのインストール
 sudo apt -y install tree
 
 # npmのインストール
 sudo apt -y install npm
+
+# Hugoのインストール（静的サイトジェネレータ）
+wget https://github.com/gohugoio/hugo/releases/download/v0.62.1/hugo_0.62.1_Linux-64bit.deb
+wget https://github.com/gohugoio/hugo/releases/download/v0.62.1/hugo_extended_0.62.1_Linux-64bit.deb
+sudo apt install ./hugo_0.62.1_Linux-64bit.deb && rm ./hugo_0.62.1_Linux-64bit.deb
+sudo apt install ./hugo_extended_0.62.1_Linux-64bit.deb && ./hugo_extended_0.62.1_Linux-64bit.deb
 
 ###################### 以下vimの設定 ######################
 # 引用元元 https://qiita.com/iwaseasahi/items/0b2da68269397906c14c
