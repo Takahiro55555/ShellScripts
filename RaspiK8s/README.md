@@ -93,7 +93,7 @@ pi4b-01   NotReady   master   3m46s   v1.17.2
 ```
 
 ##### 補足
-上記で実行したスクリプトではまず、`setupK8sCommon.sh`というスクリプトファイルを実行するがそこには以下のような記述がある。
+上記で実行したスクリプトではまず、`setupK8sCommon.sh`というスクリプトファイルを実行する。そこには以下のような記述がある。
 
 ```
 sudo add-apt-repository \
@@ -111,7 +111,8 @@ sudo add-apt-repository \
 > - Bionic 18.04 (LTS)
 > - Xenial 16.04 (LTS)
 
-となっており、今回使用しているOSのバージョン(19.10)には対応していないようで、実際に本来のまま実行してもdockerのインストールを行うことができなかった。
+となっており、今回使用しているOSのバージョン(19.10)には対応していないようである。
+また、実際に元のまま実行してもdockerのインストールを行うことができなかった。
 
 そこで、`$(lsb_release -cs) \`を`disco \`と書き換えた。
 
@@ -133,7 +134,7 @@ $ sudo kubeadm join 192.168.11.66:6443 --token xxxxxx.xxxxxxxxxxxxxxxx \
     --discovery-token-ca-cert-hash sha256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-なお、[参考記事](https://qiita.com/soumi/items/7736ac3aabbbe4fb474a#w-master%E3%83%8E%E3%83%BC%E3%83%89%E3%81%ABjoin%E3%81%99%E3%82%8B)によると、時間が超時間経過した場合、上記のトークンは無効になるようである。
+なお、[参考記事](https://qiita.com/soumi/items/7736ac3aabbbe4fb474a#w-master%E3%83%8E%E3%83%BC%E3%83%89%E3%81%ABjoin%E3%81%99%E3%82%8B)によると、Masterの起動から超時間経過した場合、上記のトークンは無効になるようである。
 
 トークンが無効になってしまった場合、以下のコマンドを実行し再取得できるようである。
 
@@ -158,4 +159,4 @@ pi4b-03   NotReady   <none>   23s   v1.17.2
 
 後日余裕があるときに設定したい。
 
-以下、Comming Soon...
+(以下、Comming Soon...)
